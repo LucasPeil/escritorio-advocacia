@@ -111,14 +111,17 @@
     color: white;
     background-color: #b47820;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     transition: all 0.5s ease-in-out;
-    -webkit-box-shadow: 0 10px 6px -6px #2d2d2d;
-    -moz-box-shadow: 0 10px 6px -6px #2d2d2d;
-         box-shadow: 0 10px 6px -6px #2d2d2d;
+    -webkit-box-shadow: 0 10px 6px -6px #414141;
+    -moz-box-shadow: 0 10px 6px -6px #414141;
+    box-shadow: 0 10px 6px -6px #414141;
+    margin-bottom: 4rem;
   }
 
   .botao-capa:hover{
-    transform: scale(110%);
+    transform: scale(105%);
+    background-color: #9f6816;
   }
 
+  
