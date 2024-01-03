@@ -1,6 +1,6 @@
 import React from "react";
 
-const TituloEstilizado = ({ titulo, icon }) => {
+const TituloEstilizado = ({ titulo, icon, iconWidth, iconHeight }) => {
   return (
     <>
       <div
@@ -21,7 +21,7 @@ const TituloEstilizado = ({ titulo, icon }) => {
         >
           {titulo}
         </h2>
-        <img src={icon} width={"85px"} height={"85px"} />
+        {icon && <img src={icon} width={iconWidth} height={iconHeight} />}
       </div>
       <div
         style={{

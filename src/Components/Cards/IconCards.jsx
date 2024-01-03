@@ -1,9 +1,14 @@
 import React from "react";
 import "./iconCards.css";
-const IconCards = () => {
+const IconCards = ({ num }) => {
   return (
-    <div style={{ position: "relative", marginTop: "5rem" }}>
-      <div className="cards-servicos" style={{}} data-label="Serviço 1">
+    <div
+      style={{
+        position: "relative",
+        marginTop: "5rem",
+      }}
+    >
+      <div className="cards-servicos" style={{}} data-label={`Serviço ${num}`}>
         <p style={{ color: "white", marginTop: "7rem", textAlign: "center" }}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus,
           ipsa alias sapiente commodi, nemo sed quo, suscipit dolor quis

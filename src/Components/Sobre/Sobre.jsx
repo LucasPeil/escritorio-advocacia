@@ -10,9 +10,10 @@ const Sobre = () => {
         justifyContent: "space-around",
         backgroundColor: "#F5F3EF",
         boxShadow: " 0px 5px 10px #939393",
+        height: "80vh",
       }}
     >
-      <img src={sobreImg} width={"32%"} />
+      <img src={sobreImg} width={"32%"} height={"100%"} />
       <div style={{ width: "40%" }}>
         <TituloEstilizado titulo={"Nossa História"} />
 
