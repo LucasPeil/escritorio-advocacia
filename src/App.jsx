@@ -49,14 +49,31 @@ function App() {
           ))}
         </div>
       </div>
+      <div
+        id="duvidas"
+        style={{
+          margin: "7rem 0",
+
+          backgroundColor: "#eae7e4",
+          padding: " 1rem 2.5rem",
+        }}
+      >
+        <TituloEstilizado
+          titulo={"Dúvidas Frequentes"}
+          icon={question}
+          iconWidth={"50px"}
+          iconHeight={"50px"}
+        />
+
+        <Perguntas />
+      </div>
 
       <div
         id="contato"
         style={{
-          margin: "7rem 0",
+          margin: "7rem 0 10rem 0",
           boxSizing: "border-box",
-          padding: " 1rem 2.5rem",
-          backgroundColor: "#eae7e4",
+          padding: " 0 2.5rem",
         }}
       >
         <TituloEstilizado
@@ -70,22 +87,6 @@ function App() {
       </div>
 
       <div
-        style={{
-          margin: "7rem 0",
-          padding: " 0 2.5rem",
-        }}
-      >
-        <TituloEstilizado
-          titulo={"Dúvidas Frequentes"}
-          icon={question}
-          iconWidth={"50px"}
-          iconHeight={"50px"}
-        />
-
-        <Perguntas />
-      </div>
-      <div
-        id="duvidas"
         style={{
           marginTop: "2rem ",
           padding: " 0 2.5rem",
