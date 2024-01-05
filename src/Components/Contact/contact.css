@@ -1,0 +1,11 @@
+.horarios{
+    display: flex;
+    justify-content:space-around;
+    font-size:1.3rem
+}
+.dias{
+    font-weight: bold;
+    font-style: italic;
+    text-align: start;
+    min-width: 30%;
+}

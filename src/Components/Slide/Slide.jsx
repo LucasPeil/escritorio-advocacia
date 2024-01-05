@@ -48,6 +48,9 @@ const HeadSlide = () => {
             <li className="links">
               <a href="#contato">Contato</a>
             </li>
+            <li className="links">
+              <a href="#duvidas">Dúvidas Frequentes</a>
+            </li>
           </ul>
         </nav>
         <button className="botao-capa">

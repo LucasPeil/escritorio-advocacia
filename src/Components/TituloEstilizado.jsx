@@ -30,9 +30,7 @@ const TituloEstilizado = ({ titulo, icon, iconWidth, iconHeight }) => {
           width: "10rem",
           height: "0.4rem",
         }}
-      >
-        .
-      </div>
+      ></div>
     </>
   );
 };

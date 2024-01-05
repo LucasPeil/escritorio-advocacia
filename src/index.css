@@ -3,5 +3,6 @@ html, body{
   margin:0;
   font-family: 'Montserrat', sans-serif;
   background-color: #F3F3F3;
+  scroll-behavior: smooth;
 }
 

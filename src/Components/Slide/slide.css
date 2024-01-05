@@ -42,18 +42,25 @@
   }
 
   nav{
-    width: 30%;
+    width: 70%;
   }
   nav ul{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     margin: 2.5rem 0;
+    
+    box-sizing: border-box;
+    padding: 0 10rem;
+    
   }
   nav li{
     border-left: 1px solid white;
+    display: flex !important;
+    justify-content: center !important;
     width: 100%;
-    text-align: center;
+    
+   
   }
 
   nav li:first-child{
@@ -74,6 +81,8 @@
       background-position: -100%;
       display: inline-block;
       padding: 5px 0;
+    
+     
       position: relative;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
