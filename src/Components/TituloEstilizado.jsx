@@ -1,6 +1,12 @@
 import React from "react";
 
-const TituloEstilizado = ({ titulo, icon, iconWidth, iconHeight }) => {
+const TituloEstilizado = ({
+  titulo,
+  icon,
+  iconWidth,
+  iconHeight,
+  classLabel = "titulo-estilizado",
+}) => {
   return (
     <>
       <div
@@ -10,18 +16,17 @@ const TituloEstilizado = ({ titulo, icon, iconWidth, iconHeight }) => {
           alignItems: "center",
         }}
       >
-        <h2
-          style={{
-            fontSize: "3rem",
-            color: "#5D5E62",
-            letterSpacing: "0.5rem",
-
-            marginBottom: "15px",
-          }}
-        >
+        <h2 className={classLabel} style={{}}>
           {titulo}
         </h2>
-        {icon && <img src={icon} width={iconWidth} height={iconHeight} />}
+        {icon && (
+          <img
+            className="icon"
+            src={icon}
+            width={iconWidth}
+            height={iconHeight}
+          />
+        )}
       </div>
       <div
         style={{

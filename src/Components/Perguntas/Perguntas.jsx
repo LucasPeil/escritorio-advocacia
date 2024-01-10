@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./perguntas.css";
 import arrow from "../../assets/arrow.png";
+
 const Perguntas = () => {
   const [showPergunta1, setShowPergunta1] = useState(false);
   const [showPergunta2, setShowPergunta2] = useState(false);
@@ -29,7 +30,11 @@ const Perguntas = () => {
     },
   };
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ ease: "linear", duration: 0.7 }}
+      viewport={{ once: true }}
       style={{
         margin: "5rem 0",
         display: "flex",
@@ -66,6 +71,7 @@ const Perguntas = () => {
         </div>
 
         <motion.div
+          initial={{ opacity: 0, y: 100 }}
           style={{ display: showPergunta1 ? "block" : "none" }}
           animate={showPergunta1 ? "open" : "closed"}
           variants={variantsPerguntas}
@@ -248,7 +254,7 @@ const Perguntas = () => {
           </p>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

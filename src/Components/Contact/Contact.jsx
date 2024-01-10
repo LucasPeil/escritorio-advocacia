@@ -3,17 +3,15 @@ import map from "../../assets/map.png";
 import phone from "../../assets/phone.png";
 import clock from "../../assets/clock.png";
 import "./contact.css";
+import { motion } from "framer-motion";
 const Contact = () => {
   return (
-    <div
-      style={{
-        margin: "5rem 0",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-        boxSizing: "border-box",
-        gap: "10rem",
-      }}
+    <motion.div
+      className="contact-container"
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ ease: "linear", duration: 0.6 }}
+      viewport={{ once: true }}
     >
       <div style={{ width: "45%" }}>
         {/* Pelotas */}
@@ -204,7 +202,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

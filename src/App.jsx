@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "react-slideshow-image/dist/styles.css";
 import "boxicons";
 
@@ -9,19 +9,20 @@ import TituloEstilizado from "./Components/TituloEstilizado";
 import handshakeIcon from "./assets/handshake.png";
 import question from "./assets/question.png";
 import pin from "./assets/pin.png";
-
+import { motion } from "framer-motion";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Perguntas from "./Components/Perguntas/Perguntas";
+import TitleMotionDiv from "./Components/TitleMotionDiv";
 
 function App() {
+  const scrollRef = useRef(null);
   return (
     <>
       <HeadSlide />
       <div
         id="sobre"
         style={{
-          transition: "all 0.3s ease",
           margin: "7rem 0",
         }}
       >
@@ -29,12 +30,14 @@ function App() {
       </div>
 
       <div id="servicos" style={{ margin: "6rem 2.5rem" }}>
-        <TituloEstilizado
-          titulo={"Nossos Serviços"}
-          icon={handshakeIcon}
-          iconWidth={"65px"}
-          iconHeight={"65px"}
-        />
+        <TitleMotionDiv>
+          <TituloEstilizado
+            titulo={"Nossos Serviços"}
+            icon={handshakeIcon}
+            iconWidth={"65px"}
+            iconHeight={"65px"}
+          />
+        </TitleMotionDiv>
 
         <div
           style={{
@@ -44,9 +47,15 @@ function App() {
             flexWrap: "wrap",
           }}
         >
-          {Array.from({ length: 6 }, (_, index) => (
+          {/*   {Array.from({ length: 6 }, (_, index) => (
             <IconCards num={index + 1} />
-          ))}
+          ))} */}
+          <IconCards num={1} delay={0.1} scrollRef={scrollRef} />
+          <IconCards num={2} delay={0.3} scrollRef={scrollRef} />
+          <IconCards num={3} delay={0.5} scrollRef={scrollRef} />
+          <IconCards num={4} delay={0.6} scrollRef={scrollRef} />
+          <IconCards num={5} delay={0.7} scrollRef={scrollRef} />
+          <IconCards num={6} delay={0.8} scrollRef={scrollRef} />
         </div>
       </div>
       <div
@@ -58,12 +67,14 @@ function App() {
           padding: " 1rem 2.5rem",
         }}
       >
-        <TituloEstilizado
-          titulo={"Dúvidas Frequentes"}
-          icon={question}
-          iconWidth={"50px"}
-          iconHeight={"50px"}
-        />
+        <TitleMotionDiv>
+          <TituloEstilizado
+            titulo={"Dúvidas Frequentes"}
+            icon={question}
+            iconWidth={"50px"}
+            iconHeight={"50px"}
+          />
+        </TitleMotionDiv>
 
         <Perguntas />
       </div>
@@ -76,12 +87,14 @@ function App() {
           padding: " 0 2.5rem",
         }}
       >
-        <TituloEstilizado
-          titulo={"Contato"}
-          icon={pin}
-          iconWidth={"50px"}
-          iconHeight={"50px"}
-        />
+        <TitleMotionDiv>
+          <TituloEstilizado
+            titulo={"Contato"}
+            icon={pin}
+            iconWidth={"50px"}
+            iconHeight={"50px"}
+          />
+        </TitleMotionDiv>
 
         <Contact />
       </div>

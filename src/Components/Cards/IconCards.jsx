@@ -1,34 +1,38 @@
 import React from "react";
 import "./iconCards.css";
-const IconCards = ({ num }) => {
+import { motion } from "framer-motion";
+const IconCards = ({ num, delay }) => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ ease: "linear", duration: 0.7, delay: delay }}
+      viewport={{ once: true }}
       style={{
         position: "relative",
         marginTop: "5rem",
       }}
     >
       <div className="cards-servicos" style={{}} data-label={`Serviço ${num}`}>
-        <p style={{ color: "white", marginTop: "7rem", textAlign: "center" }}>
+        <div className="title-service">
+          <p className="title">Serviço num</p>
+        </div>
+        <p
+          style={{
+            color: "white",
+            marginTop: "7rem",
+            textAlign: "center",
+            zIndex: 100,
+          }}
+        >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus,
           ipsa alias sapiente commodi, nemo sed quo, suscipit dolor quis
           nesciunt enim necessitatibus!
         </p>
         <button className="botao-cards">Saiba mais</button>
       </div>
-      <div
-        style={{
-          width: "3rem",
-          height: "3rem",
-          backgroundColor: "#9a681e",
-          position: "absolute",
-          top: "4.9rem",
-          left: "-0.9rem",
-          zIndex: 1,
-          transform: "rotate(45deg)",
-        }}
-      ></div>
-    </div>
+      <div className="cards-servicos-background"></div>
+    </motion.div>
   );
 };
 

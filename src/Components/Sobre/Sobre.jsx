@@ -1,61 +1,28 @@
 import React from "react";
 import sobreImg from "../../assets/Sobre.jpg";
 import TituloEstilizado from "../TituloEstilizado";
+import { motion } from "framer-motion";
+import "./sobre.css";
 const Sobre = () => {
   return (
-    <div
-      style={{
-        padding: "2rem 0",
-        display: "flex",
-        justifyContent: "end",
-        // backgroundColor: "#F5F3EF",
-        /*  boxShadow: " 0px 5px 10px #939393", */
-        height: "65vh",
-        position: "relative",
-      }}
-    >
-      <img
-        style={{
-          position: "absolute",
-          top: "-1rem",
-          left: "6rem",
-        }}
-        src={sobreImg}
-        width={"20%"}
-      />
-      <div
-        style={{
-          width: "100%",
-          padding: "1rem 2rem",
-          // backgroundColor: "#F0EEEB",
-          backgroundColor: "#EAE7E4",
+    <div className="sobre-container">
+      <img className="img-sobre" src={sobreImg} />
 
-          maxHeight: "30rem",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "end",
-
-            height: "100%",
-          }}
+      <div className="sobre-content">
+        <motion.div
+          className="sobre-text-container"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ ease: "linear", duration: 0.8 }}
+          viewport={{ once: true }}
         >
-          <div style={{ width: "65%" }}>
-            <TituloEstilizado titulo={"Nossa História"} />
+          <div className="sobre-titulo-text-container">
+            <TituloEstilizado
+              titulo={"Nossa História"}
+              classLabel="titulo-estilizado-sobre"
+            />
 
-            <p
-              style={{
-                fontSize: "1.3rem",
-
-                lineHeight: "2rem",
-              }}
-            >
+            <p className="sobre-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               efficitur velit diam, et porttitor leo luctus non. Proin sit amet
               cursus velit, nec dignissim augue. Vestibulum nec ligula porta,
@@ -70,7 +37,7 @@ const Sobre = () => {
               velit.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

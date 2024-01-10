@@ -1,8 +1,42 @@
-html, body{
+* {
   padding: 0;
-  margin:0;
+  margin: 0;
+
+}
+html, body{
   font-family: 'Montserrat', sans-serif;
   background-color: #F3F3F3;
   scroll-behavior: smooth;
+  
+}
+body{
+  min-width: 100%;
 }
 
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .titulo-estilizado, .titulo-estilizado-sobre{
+    font-size: 2rem;
+    color: #5D5E62;
+    letter-spacing: 0.5rem;
+    margin-bottom: 15px;
+  }
+  .titulo-estilizado-sobre{
+   color: #F3F3F3;
+  }
+
+  .icon{
+    display: none;
+  }
+}
+
+
+/* .titulo-estilizado{
+
+  font-size: 3rem;
+  color: #5D5E62;
+  letter-spacing: 0.5rem;
+
+  margin-bottom: 15px;
+} */
