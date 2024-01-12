@@ -1,9 +1,11 @@
 import React from "react";
 import "./iconCards.css";
+
 import { motion } from "framer-motion";
 const IconCards = ({ num, delay }) => {
   return (
     <motion.div
+      className="individual-cards-container"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ ease: "linear", duration: 0.7, delay: delay }}

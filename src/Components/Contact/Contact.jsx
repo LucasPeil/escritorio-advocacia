@@ -8,22 +8,16 @@ const Contact = () => {
   return (
     <motion.div
       className="contact-container"
-      initial={{ opacity: 0, x: 100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ ease: "linear", duration: 0.6 }}
+      initial={{ opacity: 0, x: 100, width: 0 }}
+      whileInView={{ opacity: 1, x: 0, width: "100%" }}
+      transition={{ ease: "linear", duration: 0.6, width: { duration: 0.1 } }}
       viewport={{ once: true }}
     >
-      <div style={{ width: "45%" }}>
+      <div className="contact-container-content">
         {/* Pelotas */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-around",
-          }}
-        >
+        <div className="contact-content">
           {/* endereço */}
-          <div style={{ width: "40%" }}>
+          <div className="endereco-container">
             <div
               style={{
                 borderBottom: "2px solid black",
@@ -31,66 +25,49 @@ const Contact = () => {
                 flexDirection: "row",
                 justifyContent: "space-between",
                 alignItems: "center",
+                paddingBottom: "0.5rem",
               }}
             >
-              <p
-                style={{
-                  fontWeight: "bold",
-                  display: "inline-block",
-                  fontSize: "1.5rem",
-                }}
-              >
-                Pelotas - RS
-              </p>
+              <p className="info-labels">Pelotas - RS</p>
 
               <img src={map} width={"30px"} height={"30px"} />
             </div>
 
-            <p style={{ width: "80%", fontSize: "1.2rem", marginTop: "2rem" }}>
+            <p className="info-content">
               Av. Domingos de Almeida, 431 - Areal, 96085-470
             </p>
           </div>
           {/* Fone */}
-          <div style={{ width: "40%" }}>
+          <div className="endereco-container">
             <div
               style={{
                 borderBottom: "2px solid black",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
-
+                paddingBottom: "0.5rem",
                 width: "100%",
               }}
             >
-              <p
-                style={{
-                  fontWeight: "bold",
-                  display: "inline-block",
-                  fontSize: "1.5rem",
-                }}
-              >
-                Fone
-              </p>
+              <p className="info-labels">Fone</p>
 
               <img src={phone} width={"30px"} height={"30px"} />
             </div>
 
-            <p style={{ width: "100%", fontSize: "1.2rem", marginTop: "2rem" }}>
-              (53) XXXXX-XXXX
-            </p>
+            <p className="info-content">(53) XXXXX-XXXX</p>
           </div>
         </div>
         {/* FIM Pelotas */}
         {/* Rio Grande */}
-        <div
+        {/*      <div
           style={{
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-around",
           }}
         >
-          {/* endereço */}
-          <div style={{ width: "40%" }}>
+          
+          <div className="endereco-container">
             <div
               style={{
                 borderBottom: "2px solid black",
@@ -117,8 +94,8 @@ const Contact = () => {
               Av. Domingos de Almeida, 431 - Areal, 96085-470
             </p>
           </div>
-          {/* Fone */}
-          <div style={{ width: "40%" }}>
+         
+          <div className="endereco-container">
             <div
               style={{
                 borderBottom: "2px solid black",
@@ -146,36 +123,27 @@ const Contact = () => {
               (53) XXXXX-XXXX
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* FIM RIO GRANDE */}
 
       {/* // Horario atendimento */}
-      <div style={{ width: "44%" }}>
+      <div className="contact-container-content">
         <div
           style={{
             borderBottom: "2px solid black",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-
-            width: "100%",
+            paddingBottom: "0.5rem",
           }}
         >
-          <p
-            style={{
-              fontWeight: "bold",
-              display: "inline-block",
-              fontSize: "1.5rem",
-            }}
-          >
-            Horário de Atendimento
-          </p>
+          <p className="info-labels">Horário de Atendimento</p>
 
           <img src={clock} width={"30px"} height={"30px"} />
         </div>
 
-        <div style={{ width: "100%", fontSize: "1.2rem", marginTop: "2rem" }}>
+        <div className="horarios-atendimento">
           <p className="horarios">
             <span className="dias">Segunda-Feira</span>
             08:00 -18:00

@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import "react-slideshow-image/dist/styles.css";
 import "boxicons";
-
+import "./Components/Cards/iconCards.css";
 import HeadSlide from "./Components/Slide/Slide";
 import Sobre from "./Components/Sobre/Sobre";
 import IconCards from "./Components/Cards/IconCards";
@@ -39,14 +39,7 @@ function App() {
           />
         </TitleMotionDiv>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-            flexWrap: "wrap",
-          }}
-        >
+        <div className="cards-container">
           {/*   {Array.from({ length: 6 }, (_, index) => (
             <IconCards num={index + 1} />
           ))} */}

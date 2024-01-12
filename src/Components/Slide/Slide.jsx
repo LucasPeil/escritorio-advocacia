@@ -5,6 +5,7 @@ import capa2 from "../../assets/capa-2.jpg";
 import capa3 from "../../assets/capa-3.jpg";
 import capa4 from "../../assets/capa-4.jpg";
 import { motion } from "framer-motion";
+import whatsapp from "../../assets/whatsapp.png";
 const HeadSlide = () => {
   const [show, setShow] = useState(false);
   const images = [capa3, capa2, capa4];
@@ -61,12 +62,7 @@ const HeadSlide = () => {
         </nav>
         <button className="botao-capa">
           Entre em contato conosco{" "}
-          <box-icon
-            size="md"
-            type="logo"
-            name="whatsapp"
-            color="white"
-          ></box-icon>
+          <img src={whatsapp} width={"30px"} height={"30px"} />
         </button>
       </motion.div>
     </>

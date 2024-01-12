@@ -1,32 +1,223 @@
 
-
+.nome-escritorio{
+  color: white;
+  text-align: center;
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .nome-escritorio{
-    color: white;
+    
     font-size: 3rem;
     width: 100% ;
-    text-align: center;
-    border: 1px solid blue
   }
-
   nav{
     width: 100%;
-    border: 1px solid red;
+    margin: 2.5rem 0 0 0 ;
+  }
+  nav a{
+    font-size: 1rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+  }
+  nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    
+    
+  }
+  nav li{
+   margin: 0.5rem 0;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: space-between;
+    width: 100%; 
+  }
+  .pequena-apresentacao{
+    color: white;
+    font-size: 1rem;
+    width: 90%;
+    text-align: center;
+    line-height: 2rem;
+    margin: 2rem 2rem 0 2rem;
+    padding: 0 1rem;
+  }
+  .botao-capa{
+    width: 85%;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .botao-capa{
+    width: 70%;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    box-sizing: border-box;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .nome-escritorio{
-  color: white;
-  font-size: 4rem;
-  width: 30%;
-  text-align: center;
+  font-size: 3.5rem;
+  width: 70%;
+  }
 
+  nav{
+    width: 100%;
+    margin: 2.5rem 0 0 0 ;
+    margin-bottom:3.8rem ;
+  }
+  nav a{
+    font-size: 1rem;
+   
+    padding-bottom: 3px;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    
+  }
+  nav li{
+  border-left: 1px solid white;
+   margin: 0.5rem 0;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: space-between;
+    width: 100%; 
+  }
+  .pequena-apresentacao{
+    color: white;
+    font-size: 1.1rem;
+    width: 90%;
+    text-align: center;
+    line-height: 2rem;
+    margin: 2rem 2rem 0 2rem;
+    padding: 0 1rem;
+  }
+
+  .botao-capa{
+    margin-top: 3rem;
+    width: 20rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
   }
 }
 
 
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  .nome-escritorio{
+    font-size: 3.8rem;
+    width: 30rem;
+    
+  }
+  nav{
+    width: 42rem;
+    margin: 4rem 0 4rem 0 ;
+  }
+  nav a{
+    font-size: 1.3rem;
+    padding-bottom: 3px;
+  }
+  nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    
+    
+  }
+  nav li{
+    border-left: 1px solid white;
+    margin: 0.5rem 0;
+     display: flex !important;
+     justify-content: center !important;
+     align-items: space-between;
+     width: 100%;
+  }
+  .pequena-apresentacao{
+    color: white;
+    font-size: 1.3rem;
+    width:40rem;
+    text-align: center;
+    line-height: 2rem;
+    margin: 2rem 2rem 0rem 2rem;
+    padding: 0 1rem;
+  }
+  .botao-capa{
+    
+    width: 27rem;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+  .nome-escritorio{
+    font-size: 4rem;
+    width: 40rem;
+  }
+  nav{
+    width: 50rem;
+    margin: 2.5rem 0 3rem 0 ;
+  }
+  nav a{
+    font-size: 1.4rem;
+    padding-bottom: 3px;
+  }
+  nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    
+    
+  }
+  nav li{
+    border-left: 1px solid white;
+    margin: 0.5rem 0;
+     display: flex !important;
+     justify-content: center !important;
+     align-items: space-between;
+     width: 100%;
+  }
+  .pequena-apresentacao{
+    color: white;
+    font-size: 1.4rem;
+    width: 40rem;
+    text-align: center;
+    line-height: 2rem;
+    margin: 3rem 2rem 3.2rem 2rem;
+    padding: 0 1rem;
+  }
+  .botao-capa{
+    
+    width: 25rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    box-sizing: border-box;
+  }
+}
 
 .each-slide-effect > div {
     display: flex;
@@ -55,37 +246,7 @@
    
   }
 
-
-
-  .pequena-apresentacao{
-    color: white;
-    font-size: 1.2rem;
-    width: 35%;
-    text-align: center;
-    line-height: 2rem;
-  }
-
-  /* nav{
-    width: 55%;
-  } */
-  nav ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 2.5rem 0;
-    
-    box-sizing: border-box;
-    padding: 0 10rem;
-    
-  }
-  nav li{
-    border-left: 1px solid white;
-    display: flex !important;
-    justify-content: center !important;
-    width: 100%;
-    
-   
-  }
+ 
 
   nav li:first-child{
      border-left: none; 
@@ -94,7 +255,7 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1.2rem;
+    
     background-image: linear-gradient(
         to right,
         #CF9D53,
@@ -132,23 +293,18 @@
      width: 100%;
    }
    
-  .botao-capa{
+   .botao-capa{
     margin-top: 2.2rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-weight: 500;
-    width: 20%;
     height: 2.8rem;
     color: white;
     background-color: #b47820;
     border: none;
-    font-size: 1.4rem;
     transition: all 0.5s ease-in-out;
-    -webkit-box-shadow: 0 10px 6px -6px #414141;
-    -moz-box-shadow: 0 10px 6px -6px #414141;
-    box-shadow: 0 10px 6px -6px #414141;
     margin-bottom: 4rem;
   }
 
