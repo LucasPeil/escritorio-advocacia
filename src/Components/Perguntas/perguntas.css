@@ -165,3 +165,58 @@
     }
 
 }
+
+@media screen and (min-width: 1601px)  {
+    .perguntas{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1.8rem;
+        margin: 0;
+ 
+     
+    }
+    .perguntas-container{
+        
+            margin: 5rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+
+          
+    }
+    .awnser{
+      
+        
+        font-size: 1.3rem;
+    
+    } 
+    
+    .pergunta-container-content{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+        border-bottom: 2px solid #b47820;
+        width: 90%;
+        padding-right: 2rem;
+        margin-bottom: 1.8rem ;
+        cursor: pointer;
+        z-index: 1000000;
+        
+      
+       
+    }
+    .pergunta-container-content:nth-child(5){
+     margin-bottom: 0;
+    }
+    
+    
+    .pergunta-botao-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}

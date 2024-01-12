@@ -61,7 +61,7 @@ const HeadSlide = () => {
           </ul>
         </nav>
         <button className="botao-capa">
-          Entre em contato conosco{" "}
+          <b> Entre em contato conosco !</b>
           <img src={whatsapp} width={"30px"} height={"30px"} />
         </button>
       </motion.div>

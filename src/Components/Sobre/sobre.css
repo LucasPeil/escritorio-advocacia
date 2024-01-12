@@ -126,7 +126,7 @@
     }
   }
 
-  @media screen and (min-width: 1151px) and (max-width: 1550px) {
+  @media screen and (min-width: 1151px) and (max-width: 1600px) {
     .img-sobre{
         top:-5rem;
         left: 4rem;
@@ -163,7 +163,44 @@
         margin-top: 1.8rem ;
     }
   }
+  @media screen and (min-width: 1601px)  {
+    .img-sobre{
+        top:-5.5rem;
+        left: 4rem;
+        width:20rem;
+    
+        
+    }
+    .sobre-titulo-text-container{
+        width: 75%;
+        z-index: 100;
+    }
+  
+    .sobre-container{   
+        display: flex;
+        justify-content: end;
+        height: 25rem;
+        position: relative;
+        margin-top:  14rem;
+        margin-bottom: 14rem;
+        
+    }
+    .sobre-content{
+        width: 100%;
+        padding: 1rem 2rem;
+        background-color: #EAE7E4;
+        max-height: 70rem;
 
+    }
+    .sobre-text{
+       
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        width: 100%;
+        color: black;
+        margin-top: 1.8rem ;
+    }
+  }
 .sobre-text-container{
     display: flex;
     flex-direction: column;
