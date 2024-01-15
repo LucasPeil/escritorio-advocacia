@@ -6,7 +6,11 @@ import "./sobre.css";
 const Sobre = () => {
   return (
     <div className="sobre-container">
-      <img className="img-sobre" src={sobreImg} />
+      <img
+        alt="Imagem da Deusa grega Temis, símbolo da justiça"
+        className="img-sobre"
+        src={sobreImg}
+      />
 
       <div className="sobre-content">
         <motion.div

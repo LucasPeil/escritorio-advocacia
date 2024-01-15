@@ -4,6 +4,9 @@ import phone from "../../assets/phone.png";
 import clock from "../../assets/clock.png";
 import "./contact.css";
 import { motion } from "framer-motion";
+import whatsappIcon from "../../assets/whatsappIcon.png";
+import telephone from "../../assets/telephone.png";
+
 const Contact = () => {
   return (
     <motion.div
@@ -30,7 +33,12 @@ const Contact = () => {
             >
               <p className="info-labels">Pelotas - RS</p>
 
-              <img src={map} width={"30px"} height={"30px"} />
+              <img
+                alt="Icone ilustrado representando um mapa pequeno"
+                src={map}
+                width={"30px"}
+                height={"30px"}
+              />
             </div>
 
             <p className="info-content">
@@ -51,10 +59,31 @@ const Contact = () => {
             >
               <p className="info-labels">Fone</p>
 
-              <img src={phone} width={"30px"} height={"30px"} />
+              <img
+                alt="Icone ilustrado representando um celular"
+                src={phone}
+                width={"30px"}
+                height={"30px"}
+              />
             </div>
-
-            <p className="info-content">(53) XXXXX-XXXX</p>
+            <div className="info-container">
+              <p className="info-content info-number">(53) 98438-5207 </p>
+              <img
+                alt="Icone do aplicativo whatsapp"
+                src={whatsappIcon}
+                width={"20px"}
+                height={"20px"}
+              />
+            </div>
+            <div className="info-container">
+              <p className="info-content  info-number">(53) 3025-4248</p>
+              <img
+                alt="Icone de um telefone"
+                src={telephone}
+                width={"20px"}
+                height={"20px"}
+              />
+            </div>
           </div>
         </div>
         {/* FIM Pelotas */}
@@ -140,7 +169,12 @@ const Contact = () => {
         >
           <p className="info-labels">Horário de Atendimento</p>
 
-          <img src={clock} width={"30px"} height={"30px"} />
+          <img
+            alt="Icone ilustrado representando um relógio"
+            src={clock}
+            width={"30px"}
+            height={"30px"}
+          />
         </div>
 
         <div className="horarios-atendimento">

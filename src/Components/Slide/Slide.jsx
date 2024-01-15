@@ -20,7 +20,7 @@ const HeadSlide = () => {
     easing: "cubic-in",
   };
   return (
-    <>
+    <header id="capa">
       <Zoom {...properties}>
         <div className="each-slide-effect">
           <div style={{ backgroundImage: `url(${images[0]})` }}></div>
@@ -61,11 +61,16 @@ const HeadSlide = () => {
           </ul>
         </nav>
         <button className="botao-capa">
-          <b> Entre em contato conosco !</b>
-          <img src={whatsapp} width={"30px"} height={"30px"} />
+          <b> Entre em contato !</b>
+          <img
+            alt="Icone do aplicativo Whatsapp"
+            src={whatsapp}
+            width={"30px"}
+            height={"30px"}
+          />
         </button>
       </motion.div>
-    </>
+    </header>
   );
 };
 

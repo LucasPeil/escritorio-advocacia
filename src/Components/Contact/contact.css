@@ -203,6 +203,7 @@
         width: 93%;
        
     }
+    
     .contact-content{     
         display: flex;
         flex-direction: row;
@@ -213,6 +214,17 @@
         width: 100%;
        margin-bottom: 2rem;
     }
+    .info-container{
+        padding: 2rem 0;
+        display: flex;
+        align-items: center;
+    }
+    .info-number{
+        width: 25% !important;
+        display: inline-block;
+        margin: 0 !important;
+    }
+
     .info-labels{
         font-weight: bold;
         display: inline-block;

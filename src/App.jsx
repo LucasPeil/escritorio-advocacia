@@ -20,16 +20,16 @@ function App() {
   return (
     <>
       <HeadSlide />
-      <div
+      <article
         id="sobre"
         style={{
           margin: "7rem 0",
         }}
       >
         <Sobre />
-      </div>
+      </article>
 
-      <div id="servicos" style={{ margin: "6rem 2.5rem" }}>
+      <article id="servicos" style={{ margin: "6rem 2.5rem" }}>
         <TitleMotionDiv>
           <TituloEstilizado
             titulo={"Nossos Serviços"}
@@ -46,12 +46,12 @@ function App() {
           <IconCards num={1} delay={0.1} scrollRef={scrollRef} />
           <IconCards num={2} delay={0.3} scrollRef={scrollRef} />
           <IconCards num={3} delay={0.5} scrollRef={scrollRef} />
-          <IconCards num={4} delay={0.6} scrollRef={scrollRef} />
-          <IconCards num={5} delay={0.7} scrollRef={scrollRef} />
-          <IconCards num={6} delay={0.8} scrollRef={scrollRef} />
+          <IconCards num={4} delay={0.5} scrollRef={scrollRef} />
+          <IconCards num={5} delay={0.6} scrollRef={scrollRef} />
+          <IconCards num={6} delay={0.7} scrollRef={scrollRef} />
         </div>
-      </div>
-      <div
+      </article>
+      <article
         id="duvidas"
         style={{
           margin: "7rem 0",
@@ -70,9 +70,9 @@ function App() {
         </TitleMotionDiv>
 
         <Perguntas />
-      </div>
+      </article>
 
-      <div
+      <article
         id="contato"
         style={{
           margin: "7rem 0 10rem 0",
@@ -90,19 +90,19 @@ function App() {
         </TitleMotionDiv>
 
         <Contact />
-      </div>
+      </article>
 
-      <div
+      <article
         style={{
           marginTop: "2rem ",
           padding: " 0 2.5rem",
           backgroundColor: "#36373b",
-          height: "10vh",
+          height: "15vh",
           borderTop: "15px solid #b47820",
         }}
       >
         <Footer />
-      </div>
+      </article>
     </>
   );
 }

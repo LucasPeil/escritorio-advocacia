@@ -64,7 +64,12 @@ const Perguntas = () => {
               right: 30,
             }}
           >
-            <img src={arrow} width={"15px"} height={"15px"} />
+            <img
+              alt="Icone de uma seta apontada para direita"
+              src={arrow}
+              width={"15px"}
+              height={"15px"}
+            />
           </motion.button>
         </div>
 
@@ -113,7 +118,12 @@ const Perguntas = () => {
               right: 30,
             }}
           >
-            <img src={arrow} width={"15px"} height={"15px"} />
+            <img
+              alt="Icone de uma seta apontada para direita"
+              src={arrow}
+              width={"15px"}
+              height={"15px"}
+            />
           </motion.button>
         </div>
 
@@ -162,7 +172,12 @@ const Perguntas = () => {
               right: 30,
             }}
           >
-            <img src={arrow} width={"15px"} height={"15px"} />
+            <img
+              alt="Icone de uma seta apontada para direita"
+              src={arrow}
+              width={"15px"}
+              height={"15px"}
+            />
           </motion.button>
         </div>
 
@@ -211,7 +226,12 @@ const Perguntas = () => {
               right: 30,
             }}
           >
-            <img src={arrow} width={"15px"} height={"15px"} />
+            <img
+              alt="Icone de uma seta apontada para direita"
+              src={arrow}
+              width={"15px"}
+              height={"15px"}
+            />
           </motion.button>
         </div>
 
@@ -259,7 +279,12 @@ const Perguntas = () => {
               right: 30,
             }}
           >
-            <img src={arrow} width={"15px"} height={"15px"} />
+            <img
+              alt="Icone de uma seta apontada para direita"
+              src={arrow}
+              width={"15px"}
+              height={"15px"}
+            />
           </motion.button>
         </div>
 

@@ -47,8 +47,8 @@
     padding: 0 1rem;
   }
   .botao-capa{
-    width: 85%;
-    font-size: 1.1rem;
+    width: 80%;
+    font-size: 1.4rem;
     border-radius: 2rem;
     box-sizing: border-box;
   }
@@ -112,7 +112,7 @@
   .botao-capa{
     margin-top: 3rem;
     width: 20rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     border-radius: 2rem;
   }
 }
@@ -162,16 +162,16 @@
     padding: 0 1rem;
   }
   .botao-capa{
-    
-    width: 27rem;
+    width: 21rem !important;;
     font-size: 1.6rem;
     border-radius: 2rem;
     box-sizing: border-box;
+
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1600px) {
   .nome-escritorio{
-    font-size: 3.4rem;
+    font-size: 3.7rem;
     width: 32rem;
     
   }
@@ -180,7 +180,7 @@
     margin: 2.5rem 0 3rem 0 ;
   }
   nav a{
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 3px;
   }
   nav ul{
@@ -204,7 +204,7 @@
   }
   .pequena-apresentacao{
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 40rem;
     text-align: center;
     line-height: 2rem;
@@ -213,8 +213,8 @@
   }
   .botao-capa{
     
-    width: 20rem;
-    font-size: 1.1rem;
+    width: 23rem !important;
+    font-size: 1.6rem;
     border-radius: 2rem;
     box-sizing: border-box;
   }
@@ -358,6 +358,7 @@
     border: none;
     transition: all 0.5s ease-in-out;
     margin-bottom: 4rem;
+    width: 18rem;
   }
 
   .botao-capa:hover{

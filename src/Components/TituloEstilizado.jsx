@@ -21,6 +21,7 @@ const TituloEstilizado = ({
         </h2>
         {icon && (
           <img
+            alt="Icone decorativo"
             className="icon"
             src={icon}
             width={iconWidth}

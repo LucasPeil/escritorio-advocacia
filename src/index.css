@@ -14,7 +14,14 @@ body{
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
+  footer{
+      gap: 0.9rem;   
+      flex-direction: column !important;
+      justify-content: center !important;
+     
+    
+    
+  }
   .titulo-estilizado, .titulo-estilizado-sobre{
     font-size: 2rem;
     
@@ -80,8 +87,16 @@ body{
   .titulo-estilizado{
     margin-top: 2rem;
   }
+
+
 }
 
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%
+}
 
 /* .titulo-estilizado{
 
