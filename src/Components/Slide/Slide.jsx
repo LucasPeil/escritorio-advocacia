@@ -60,7 +60,11 @@ const HeadSlide = () => {
             </li>
           </ul>
         </nav>
-        <button className="botao-capa">
+        <a
+          href={`https://api.whatsapp.com/send?phone=53984385207`}
+          target="_blank"
+          className="botao-capa"
+        >
           <b> Entre em contato !</b>
           <img
             alt="Icone do aplicativo Whatsapp"
@@ -68,7 +72,7 @@ const HeadSlide = () => {
             width={"30px"}
             height={"30px"}
           />
-        </button>
+        </a>
       </motion.div>
     </header>
   );

@@ -22,7 +22,7 @@ const Sobre = () => {
         >
           <div className="sobre-titulo-text-container">
             <TituloEstilizado
-              titulo={"Nossa História"}
+              titulo={"Sobre nós"}
               classLabel="titulo-estilizado-sobre"
             />
 

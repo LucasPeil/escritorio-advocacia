@@ -7,6 +7,9 @@
     box-shadow:  0 3px 10px rgba(0,0,0, 0.5);
     transition: all 0.4s ease-in-out;
     
+}
+a{
+    text-decoration: none !important;
 } 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .cards-servicos{
@@ -250,7 +253,14 @@
 .cards-servicos:hover {
     cursor: pointer;
     transform: scale(108%);
+    
 
+ }
+ .botao-servicos{
+    text-decoration: none !important;
+    text-align: center;
+    
+    
  }
 .cards-servicos:hover  + .cards-servicos-background{
    cursor: pointer;
@@ -260,7 +270,14 @@
 
  .cards-servicos:hover  .botao-cards{
     border: 2px solid #b47820;
-    background-color: transparent
+    background-color: transparent;
+    text-decoration: none;
+    
+ }
+ .cards-servicos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
 

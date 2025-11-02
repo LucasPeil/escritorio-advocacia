@@ -17,7 +17,7 @@ const IconCards = ({ num, delay }) => {
     >
       <div className="cards-servicos" style={{}} data-label={`Serviço ${num}`}>
         <div className="title-service">
-          <p className="title">Serviço num</p>
+          <p className="title">Serviço {num}</p>
         </div>
         <p
           style={{
@@ -31,7 +31,13 @@ const IconCards = ({ num, delay }) => {
           ipsa alias sapiente commodi, nemo sed quo, suscipit dolor quis
           nesciunt enim necessitatibus!
         </p>
-        <button className="botao-cards">Saiba mais</button>
+        <a
+          href={`https://api.whatsapp.com/send?phone=53984385207`}
+          target="_blank"
+          className="botao-cards botao-servicos"
+        >
+          Saiba mais
+        </a>
       </div>
       <div className="cards-servicos-background"></div>
     </motion.div>
