@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { Zoom } from "react-slideshow-image";
-import "./slide.css";
-import capa2 from "../../assets/capa-2.jpg";
-import capa3 from "../../assets/capa-3.jpg";
-import capa4 from "../../assets/capa-4.jpg";
-import { motion } from "framer-motion";
-import whatsapp from "../../assets/whatsapp.png";
+import React, { useState } from 'react';
+import { Zoom } from 'react-slideshow-image';
+import './slide.css';
+import capa2 from '../../assets/capa-2.jpg';
+import capa3 from '../../assets/capa-3.jpg';
+import capa4 from '../../assets/capa-4.jpg';
+import { motion } from 'framer-motion';
+import whatsapp from '../../assets/whatsapp.png';
 const HeadSlide = () => {
   const [show, setShow] = useState(false);
   const images = [capa3, capa2, capa4];
@@ -17,7 +17,7 @@ const HeadSlide = () => {
     transitionDuration: 3900,
     pauseOnHover: false,
     canSwipe: false,
-    easing: "cubic-in",
+    easing: 'cubic-in',
   };
   return (
     <header id="capa">
@@ -35,11 +35,11 @@ const HeadSlide = () => {
       <motion.div
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ ease: "linear", duration: 0.9 }}
+        transition={{ ease: 'linear', duration: 0.9 }}
         viewport={{ once: true }}
         className="capa-apresentacao"
       >
-        <h1 className="nome-escritorio">Chagas Advogados</h1>
+        <h1 className="nome-escritorio">Escritório Advogados</h1>
         <span className="pequena-apresentacao">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
           doloremque.
@@ -61,7 +61,7 @@ const HeadSlide = () => {
           </ul>
         </nav>
         <a
-          href={`https://api.whatsapp.com/send?phone=53984385207`}
+          href={`https://api.whatsapp.com/send?phone=53981157066`}
           target="_blank"
           className="botao-capa"
         >
@@ -69,8 +69,8 @@ const HeadSlide = () => {
           <img
             alt="Icone do aplicativo Whatsapp"
             src={whatsapp}
-            width={"30px"}
-            height={"30px"}
+            width={'30px'}
+            height={'30px'}
           />
         </a>
       </motion.div>

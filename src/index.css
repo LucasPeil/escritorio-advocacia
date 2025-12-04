@@ -58,7 +58,7 @@ body{
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .titulo-estilizado, .titulo-estilizado-sobre{
     font-size: 2.4rem;
-    color: #5D5E62;
+    color:#F3F3F3;
     letter-spacing: 0.5rem;
     margin-bottom: 15px;
   }

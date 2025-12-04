@@ -18,8 +18,9 @@
 
     .sobre-titulo-text-container{
         width: 100%;
+        max-width: 100%;
         z-index: 100;
-    
+        box-sizing: border-box;
     }
   
     
@@ -27,24 +28,28 @@
         display: flex;
         justify-content: end;
         align-items: center;
-        height: 65vh;
+        min-height: 65vh;
+        height: auto;
         position: relative;
-        
-       
+        overflow: hidden;
     }
     .sobre-content{
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 1.5rem 1.5rem;
         background-color: #EAE7E4;
-        border: 1px solid blue;
+        box-sizing: border-box;
     }
     .sobre-text{
-      
         font-size: 1rem;
-        line-height: 1.2rem;
+        line-height: 1.6rem;
         width: 100%;
+        max-width: 100%;
         color: white;
         margin-top: 1.5rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
     }
   }
   
@@ -59,70 +64,82 @@
 
     .sobre-titulo-text-container{
         width: 100%;
+        max-width: 100%;
         z-index: 100;
-        
+        box-sizing: border-box;
     }
   
     .sobre-container{   
         display: flex;
         justify-content: end;
-        height: 55vh;
+        min-height: 55vh;
+        height: auto;
         position: relative;
-        
         overflow: hidden;
     }
     .sobre-content{
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 2rem 2rem;
         background-color: #EAE7E4;
         max-height: 70rem;
-
+        box-sizing: border-box;
     }
     .sobre-text{
-       
         font-size: 1.2rem;
-        line-height: 1.6rem;
+        line-height: 1.8rem;
         width: 100%;
+        max-width: 100%;
         color: white;
-        margin-top: 1.8rem ;
+        margin-top: 1.8rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
     }
   }
   
   @media screen and (min-width: 769px) and (max-width: 1150px) {
     .img-sobre{
-        top:-2rem;
-        left: 2rem;
-        width:15rem;
-        
+        top:0;
+        left: 0;
+        width:100%;
+        transform: translateY(-15rem);
+        filter: brightness(40%);
     }
+
     .sobre-titulo-text-container{
-        width: 60%;
+        width: 100%;
+        max-width: 100%;
         z-index: 100;
-        
+        box-sizing: border-box;
     }
   
     .sobre-container{   
         display: flex;
         justify-content: end;
-        height: 28.5rem;
+        min-height: 28.5rem;
+        height: auto;
         position: relative;
-    
-        
+        overflow: hidden;
     }
     .sobre-content{
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 2rem 2.5rem;
         background-color: #EAE7E4;
         max-height: 70rem;
-
+        box-sizing: border-box;
     }
     .sobre-text{
-       
         font-size: 1.2rem;
-        line-height: 1.2rem;
+        line-height: 1.8rem;
         width: 100%;
-        color: black;
-        margin-top: 1.8rem ;
+        max-width: 100%;
+        color: white;
+        margin-top: 1.8rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
     }
   }
 
@@ -131,36 +148,41 @@
         top:-5rem;
         left: 4rem;
         width:18rem;
-    
-        
     }
     .sobre-titulo-text-container{
         width: 65%;
+        max-width: 100%;
         z-index: 100;
+        box-sizing: border-box;
     }
   
     .sobre-container{   
         display: flex;
         justify-content: end;
-        height: 25rem;
+        min-height: 25rem;
+        height: auto;
         position: relative;
         margin-top: 10rem;
-        
+        overflow: visible;
     }
     .sobre-content{
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 2rem 3rem;
         background-color: #EAE7E4;
         max-height: 70rem;
-
+        box-sizing: border-box;
     }
     .sobre-text{
-       
         font-size: 1.4rem;
-        line-height: 1.4rem;
+        line-height: 2rem;
         width: 100%;
+        max-width: 100%;
         color: black;
-        margin-top: 1.8rem ;
+        margin-top: 1.8rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
     }
   }
   @media screen and (min-width: 1601px)  {
@@ -168,37 +190,42 @@
         top:-5.5rem;
         left: 4rem;
         width:20rem;
-    
-        
     }
     .sobre-titulo-text-container{
         width: 75%;
+        max-width: 100%;
         z-index: 100;
+        box-sizing: border-box;
     }
   
     .sobre-container{   
         display: flex;
         justify-content: end;
-        height: 25rem;
+        min-height: 25rem;
+        height: auto;
         position: relative;
-        margin-top:  14rem;
+        margin-top: 14rem;
         margin-bottom: 14rem;
-        
+        overflow: visible;
     }
     .sobre-content{
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 2.5rem 4rem;
         background-color: #EAE7E4;
         max-height: 70rem;
-
+        box-sizing: border-box;
     }
     .sobre-text{
-       
         font-size: 1.4rem;
-        line-height: 1.4rem;
+        line-height: 2.1rem;
         width: 100%;
+        max-width: 100%;
         color: black;
-        margin-top: 1.8rem ;
+        margin-top: 1.8rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
     }
   }
 .sobre-text-container{

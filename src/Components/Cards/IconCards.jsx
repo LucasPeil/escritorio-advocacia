@@ -1,18 +1,18 @@
-import React from "react";
-import "./iconCards.css";
+import React from 'react';
+import './iconCards.css';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 const IconCards = ({ num, delay }) => {
   return (
     <motion.div
       className="individual-cards-container"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ ease: "linear", duration: 0.7, delay: delay }}
+      transition={{ ease: 'linear', duration: 0.7, delay: delay }}
       viewport={{ once: true }}
       style={{
-        position: "relative",
-        marginTop: "5rem",
+        position: 'relative',
+        marginTop: '5rem',
       }}
     >
       <div className="cards-servicos" style={{}} data-label={`Serviço ${num}`}>
@@ -21,9 +21,9 @@ const IconCards = ({ num, delay }) => {
         </div>
         <p
           style={{
-            color: "white",
-            marginTop: "7rem",
-            textAlign: "center",
+            color: 'white',
+            marginTop: '7rem',
+            textAlign: 'center',
             zIndex: 100,
           }}
         >
@@ -32,7 +32,7 @@ const IconCards = ({ num, delay }) => {
           nesciunt enim necessitatibus!
         </p>
         <a
-          href={`https://api.whatsapp.com/send?phone=53984385207`}
+          href={`https://api.whatsapp.com/send?phone=53981157066`}
           target="_blank"
           className="botao-cards botao-servicos"
         >

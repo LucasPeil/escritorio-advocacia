@@ -37,6 +37,17 @@
         font-size: 1rem; 
         margin-top: 2rem 
     }
+    .info-container{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    .info-number{
+        width: auto;
+        margin: 0;
+        font-size: 1rem;
+    }
     .horarios-atendimento{
       width: 100%; 
       font-size: 1.2rem;
@@ -46,19 +57,18 @@
     .horarios{
         display: flex;
         flex-direction: column;
-        justify-content:space-around;
+        justify-content: space-around;
         align-items: center;
-        font-size:1.3rem;
+        font-size: 1.3rem;
         margin-bottom: 1.3rem;
-        
+        width: 100%;
     }
     .dias{
         font-weight: bold;
         font-style: italic;
-        text-align: start;
-        min-width: 100%;
         text-align: center;
-    
+        width: 100%;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -98,6 +108,17 @@
         font-size: 1.2rem; 
         margin-top: 2rem 
     }
+    .info-container{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    .info-number{
+        width: auto;
+        margin: 0;
+        font-size: 1.2rem;
+    }
      .horarios-atendimento{
       width: 100%; 
       font-size: 1.2rem;
@@ -107,21 +128,20 @@
     .horarios{
         display: flex;
         flex-direction: row;
-        justify-content:start;
-        margin-top: 2rem;
-        width: 7=0%;
-        font-size:1.3rem;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1.5rem;
+        width: 100%;
+        font-size: 1.3rem;
         margin-bottom: 1.3rem;
-        
+        gap: 1rem;
     }
     .dias{
         font-weight: bold;
         font-style: italic;
         text-align: start;
         min-width: 40%;
-        
-        
-      
+        flex-shrink: 0;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1600px) {
@@ -161,6 +181,17 @@
         font-size: 1.2rem; 
         margin-top: 2rem 
     }
+    .info-container{
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+    .info-number{
+        width: auto;
+        margin: 0;
+        font-size: 1.2rem;
+    }
      .horarios-atendimento{
       width: 100%; 
       font-size: 1.2rem;
@@ -170,21 +201,20 @@
     .horarios{
         display: flex;
         flex-direction: row;
-        justify-content:start;
-        margin-top: 2rem;
-        width: 7=0%;
-        font-size:1.3rem;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1.5rem;
+        width: 100%;
+        font-size: 1.3rem;
         margin-bottom: 1.3rem;
-        
+        gap: 1.5rem;
     }
     .dias{
         font-weight: bold;
         font-style: italic;
         text-align: start;
         min-width: 40%;
-        
-        
-      
+        flex-shrink: 0;
     }
 }
 @media screen and (min-width: 1601px)  {
@@ -215,14 +245,16 @@
        margin-bottom: 2rem;
     }
     .info-container{
-        padding: 2rem 0;
         display: flex;
         align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 0.5rem 0;
     }
     .info-number{
-        width: 25% !important;
-        display: inline-block;
-        margin: 0 !important;
+        width: auto;
+        margin: 0;
+        font-size: 1.4rem;
     }
 
     .info-labels{
@@ -245,20 +277,19 @@
     .horarios{
         display: flex;
         flex-direction: row;
-        justify-content:start;
-        margin-top: 2rem;
-        width: 7=0%;
-        font-size:1.3rem;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1.5rem;
+        width: 100%;
+        font-size: 1.3rem;
         margin-bottom: 1.3rem;
-        
+        gap: 2rem;
     }
     .dias{
         font-weight: bold;
         font-style: italic;
         text-align: start;
         min-width: 40%;
-        
-        
-      
+        flex-shrink: 0;
     }
 }

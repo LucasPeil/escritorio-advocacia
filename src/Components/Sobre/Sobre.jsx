@@ -1,8 +1,8 @@
-import React from "react";
-import sobreImg from "../../assets/Sobre.jpg";
-import TituloEstilizado from "../TituloEstilizado";
-import { motion } from "framer-motion";
-import "./sobre.css";
+import React from 'react';
+import sobreImg from '../../assets/Sobre.jpg';
+import TituloEstilizado from '../TituloEstilizado';
+import { motion } from 'framer-motion';
+import './sobre.css';
 const Sobre = () => {
   return (
     <div className="sobre-container">
@@ -17,12 +17,12 @@ const Sobre = () => {
           className="sobre-text-container"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ ease: "linear", duration: 0.8 }}
+          transition={{ ease: 'linear', duration: 0.8 }}
           viewport={{ once: true }}
         >
           <div className="sobre-titulo-text-container">
             <TituloEstilizado
-              titulo={"Sobre nós"}
+              titulo={'Sobre nós'}
               classLabel="titulo-estilizado-sobre"
             />
 
